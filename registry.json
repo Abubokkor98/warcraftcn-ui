@@ -21,14 +21,14 @@
           "target": "components/ui/warcraftcn/styles/warcraft.css"
         },
         {
-          "path": "components/ui/warcraftcn/assets/bg.png",
+          "path": "components/ui/warcraftcn/assets/button-bg.png",
           "type": "registry:asset",
-          "target": "components/ui/warcraftcn/assets/bg.png"
+          "target": "components/ui/warcraftcn/assets/button-bg.png"
         },
         {
-          "path": "components/ui/warcraftcn/assets/bg-with-frame.png",
+          "path": "components/ui/warcraftcn/assets/button-bg-with-frame.png",
           "type": "registry:asset",
-          "target": "components/ui/warcraftcn/assets/bg-with-frame.png"
+          "target": "components/ui/warcraftcn/assets/button-bg-with-frame.png"
         }
       ]
     }

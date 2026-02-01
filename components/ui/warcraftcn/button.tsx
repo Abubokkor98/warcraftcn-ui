@@ -4,8 +4,8 @@ import type * as React from "react";
 
 import { cn } from "@/lib/utils";
 
-import bgImage from "./assets/bg.png";
-import bgWithFrameImage from "./assets/bg-with-frame.png";
+import bgImage from "./assets/button-bg.png";
+import bgWithFrameImage from "./assets/button-bg-with-frame.png";
 
 import "@/components/ui/warcraftcn/styles/warcraft.css";
 
