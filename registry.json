@@ -29,6 +29,16 @@
           "path": "components/ui/warcraftcn/assets/button-bg-with-frame.png",
           "type": "registry:asset",
           "target": "components/ui/warcraftcn/assets/button-bg-with-frame.png"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/button-bg-with-frame-sm.png",
+          "type": "registry:asset",
+          "target": "components/ui/warcraftcn/assets/button-bg-with-frame-sm.png"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/button-bg-sm.png",
+          "type": "registry:asset",
+          "target": "components/ui/warcraftcn/assets/button-bg-sm.png"
         }
       ]
     },
