@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import bgImage from "./assets/button-bg.png";
 import bgWithFrameImage from "./assets/button-bg-with-frame.png";
 import bgWithFrameImageSm from "./assets/button-bg-with-frame-sm.png";
+import bgImageSm from "./assets/button-bg-sm.png";
 
 import "@/components/ui/warcraftcn/styles/warcraft.css";
 
@@ -50,7 +51,7 @@ function Button({
       return size === "sm" ? bgWithFrameImageSm.src : bgWithFrameImage.src;
     }
 
-    return bgImage.src;
+    return size === "sm" ? bgImageSm.src : bgImage.src;
   }
 
   const sizeClass = () => {
@@ -58,7 +59,7 @@ function Button({
     if(variant === "frame") {
       return size === "sm" ? "w-80 h-26" : "w-120 h-24";
     }
-    return "w-104 h-16";
+    return size === "sm" ? "w-60 h-17" : "w-104 h-16";
   }
   const sizeClassStyle = { [sizeClass()]: true };
 
