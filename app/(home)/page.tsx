@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import LightPillar from "@/components/light-pillar";
 import { Button } from "@/components/ui/warcraftcn/button";
 import {
   Card,
@@ -14,20 +13,12 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center px-4 pb-3">
       <h1 className="sr-only">warcraftcn - Warcraft UI components</h1>
-      <div className="absolute top-0 left-0 h-full w-full">
-        <LightPillar
-          bottomColor="#52d6fc"
-          glowAmount={0.004}
-          intensity={1}
-          interactive={false}
-          noiseIntensity={0.5}
-          pillarHeight={0.4}
-          pillarRotation={0}
-          pillarWidth={3}
-          rotationSpeed={0.3}
-          topColor="#ffab01"
-        />
+
+      {/* Gradient glow background */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,171,1,0.5)_0%,rgba(255,171,1,0.3)_20%,rgba(82,214,252,0.25)_50%,transparent_75%)] blur-[100px]" />
       </div>
+
       <Card className="relative z-10 hidden md:block">
         <CardHeader className="text-white">
           <CardTitle className="text-center font-bold text-4xl">
