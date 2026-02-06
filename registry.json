@@ -22,22 +22,22 @@
         },
         {
           "path": "components/ui/warcraftcn/assets/button-bg.png",
-          "type": "registry:asset",
+          "type": "registry:file",
           "target": "components/ui/warcraftcn/assets/button-bg.png"
         },
         {
           "path": "components/ui/warcraftcn/assets/button-bg-with-frame.png",
-          "type": "registry:asset",
+          "type": "registry:file",
           "target": "components/ui/warcraftcn/assets/button-bg-with-frame.png"
         },
         {
           "path": "components/ui/warcraftcn/assets/button-bg-with-frame-sm.png",
-          "type": "registry:asset",
+          "type": "registry:file",
           "target": "components/ui/warcraftcn/assets/button-bg-with-frame-sm.png"
         },
         {
           "path": "components/ui/warcraftcn/assets/button-bg-sm.png",
-          "type": "registry:asset",
+          "type": "registry:file",
           "target": "components/ui/warcraftcn/assets/button-bg-sm.png"
         }
       ]
@@ -61,7 +61,7 @@
         },
         {
           "path": "components/ui/warcraftcn/assets/input-frame.png",
-          "type": "registry:asset",
+          "type": "registry:file",
           "target": "components/ui/warcraftcn/assets/input-frame.png"
         }
       ]
@@ -85,7 +85,7 @@
         },
         {
           "path": "components/ui/warcraftcn/assets/card-bg.png",
-          "type": "registry:asset",
+          "type": "registry:file",
           "target": "components/ui/warcraftcn/assets/card-bg.png"
         }
       ]
