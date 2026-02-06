@@ -16,21 +16,21 @@ import { Button } from "@/components/ui/warcraftcn/button";
 
 ## Standard
 
-<Card>
+<Card className="hidden md:block">
   <CardHeader>
     <CardTitle>Arthas Menethil</CardTitle>
     <CardDescription>Prince of Lordaeron</CardDescription>
   </CardHeader>
-  <CardContent>
-    <p className="text-white">
-      The former Crown Prince of Lordaeron, who became the Lich King after
-      taking up the cursed blade Frostmourne.
-    </p>
+  <CardContent className="text-white">
+    The former Crown Prince of Lordaeron, who became the Lich King after taking
+    up the cursed blade Frostmourne.
   </CardContent>
   <CardFooter className="flex items-center justify-center">
     <Button size="sm">View Profile</Button>
   </CardFooter>
 </Card>
+
+<div className="md:hidden">Card still not supporting small resolutions</div>
 
 ## Installation
 
