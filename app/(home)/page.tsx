@@ -19,15 +19,16 @@ export default function Home() {
         <div className="absolute top-1/2 left-1/2 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,171,1,0.5)_0%,rgba(255,171,1,0.3)_20%,rgba(82,214,252,0.25)_50%,transparent_75%)] blur-[100px]" />
       </div>
 
-      <Card className="relative z-10 hidden min-h-180 max-w-xl md:block">
+      <Card className="relative z-10 min-h-180 max-w-xl">
         <CardHeader className="text-white">
-          <CardTitle className="text-center font-bold text-4xl">
+          <CardTitle className="text-center font-bold text-2xl md:text-4xl">
             warcraftcn
           </CardTitle>
         </CardHeader>
         <CardContent className="flex flex-col items-center justify-center gap-2 pt-5">
           <Image
             alt="logo"
+            className="h-50 w-50 md:h-80 md:w-80"
             height={300}
             src="/warcraftcn-logo.png"
             width={300}
@@ -46,22 +47,6 @@ export default function Home() {
           </Link>
         </CardFooter>
       </Card>
-
-      <div className="fantasy z-10 flex h-screen max-w-sm flex-col items-center justify-center gap-5 md:hidden">
-        <div className="flex flex-col items-center justify-center gap-5 rounded-md border bg-muted-foreground/50 p-5">
-          <h2 className="font-bold text-2xl">warcraftcn</h2>
-          <p className="text-center text-sm">
-            A set of components inspired by classic Warcraft III RTS UI
-            aesthetics. Open source, copy paste ready. Works with your favorite
-            frameworks. Fan made. No affiliation.
-          </p>
-          <Link href="/docs">
-            <Button className="text-xl" size="sm">
-              Get Started
-            </Button>
-          </Link>
-        </div>
-      </div>
     </div>
   );
 }
