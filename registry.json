@@ -147,6 +147,11 @@
       "registryDependencies": ["dropdown-menu"],
       "files": [
         {
+          "path": "components/ui/warcraftcn/dropdown-menu.tsx",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/dropdown-menu.tsx"
+        },
+        {
           "path": "components/ui/warcraftcn/styles/warcraft.css",
           "type": "registry:component",
           "target": "components/ui/warcraftcn/styles/warcraft.css"
