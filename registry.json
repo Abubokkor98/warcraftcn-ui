@@ -236,7 +236,7 @@
       "type": "registry:component",
       "title": "Warcraft Tooltip",
       "description": "A Warcraft-themed tooltip component with golden border, dark background, and fantasy styling",
-      "dependencies": ["@radix-ui/react-tooltip"],
+      "dependencies": ["radix-ui"],
       "registryDependencies": [],
       "files": [
         {
