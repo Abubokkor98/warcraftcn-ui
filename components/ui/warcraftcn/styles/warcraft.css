@@ -490,7 +490,8 @@
 }
 
 /* Disabled */
-.wc-radio-socket[data-disabled] {
+.wc-radio-socket[data-disabled],
+.wc-radio-socket:disabled {
   opacity: 0.4;
   cursor: not-allowed;
 }
