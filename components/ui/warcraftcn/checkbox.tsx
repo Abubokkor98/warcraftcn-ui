@@ -1,19 +1,23 @@
+"use client";
+
 import * as React from "react";
+import { Checkbox as CheckboxPrimitive } from "radix-ui";
 import { cva, type VariantProps } from "class-variance-authority";
+
 import { cn } from "@/lib/utils";
 
 import "@/components/ui/warcraftcn/styles/warcraft.css";
 
-const CheckboxVariants = cva(
-  "font-bold",
+const checkboxVariants = cva(
+  "flex items-center gap-3 cursor-pointer select-none fantasy mb-2 font-bold",
   {
     variants: {
       faction: {
-        default: "wc-avatar-default text-yellow-100",
-        orc: "wc-avatar-orc text-red-100",
-        elf: "wc-avatar-elf text-green-100",
-        human: "wc-avatar-human text-blue-100",
-        undead: "wc-avatar-undead text-purple-100",
+        default: "text-yellow-100",
+        orc: "text-red-100",
+        elf: "text-green-100",
+        human: "text-blue-100",
+        undead: "text-purple-100",
       },
     },
     defaultVariants: {
@@ -22,53 +26,45 @@ const CheckboxVariants = cva(
   }
 );
 
-export interface CheckboxProps
-  extends Omit<
-    React.InputHTMLAttributes<HTMLInputElement>,
-    "checked" | "disabled" | "onChange"
-  >,
-  VariantProps<typeof CheckboxVariants> {
-  faction?: "default" | "orc" | "elf" | "human" | "undead";
-  label?: string;
-  checked: boolean;
-  disabled?: boolean;
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+type Faction = "default" | "orc" | "elf" | "human" | "undead";
+
+interface CheckboxProps
+  extends React.ComponentProps<typeof CheckboxPrimitive.Root>,
+    VariantProps<typeof checkboxVariants> {
+  faction?: Faction;
+  children?: React.ReactNode;
 }
 
-export const Checkbox: React.FC<CheckboxProps> = ({
+function Checkbox({
   faction = "default",
-  label,
+  children,
   className,
-  checked,
   disabled,
-  onChange,
+  id,
   ...props
-}) => {
+}: CheckboxProps) {
   return (
     <label
+      htmlFor={id}
       className={cn(
-        "flex items-center gap-3 cursor-pointer select-none fantasy mb-2",
+        checkboxVariants({ faction }),
         disabled && "opacity-50 cursor-not-allowed",
         className
       )}
     >
-      <input
-        type="checkbox"
-        className={cn(
-          "checkbox",
-          `checkbox-${faction}`,
-          "w-12 h-12"
-        )}
-        checked={checked}
+      <CheckboxPrimitive.Root
+        data-slot="checkbox"
+        className={cn("wc-checkbox", `wc-checkbox-${faction}`)}
         disabled={disabled}
-        onChange={onChange}
+        id={id}
         {...props}
-      />      
-      {label && (
-        <span className={CheckboxVariants({ faction })}>
-          {label}
-        </span>
-      )}
+      >
+        <CheckboxPrimitive.Indicator />
+      </CheckboxPrimitive.Root>
+      {children}
     </label>
   );
-};
+}
+
+export { Checkbox, checkboxVariants };
+export type { CheckboxProps, Faction };
