@@ -13,11 +13,11 @@ const checkboxVariants = cva(
   {
     variants: {
       faction: {
-        default: "text-yellow-100",
-        orc: "text-red-100",
-        elf: "text-green-100",
-        human: "text-blue-100",
-        undead: "text-purple-100",
+        default: "text-yellow-800 dark:text-yellow-100",
+        orc: "text-red-700 dark:text-red-100",
+        elf: "text-green-700 dark:text-green-100",
+        human: "text-blue-700 dark:text-blue-100",
+        undead: "text-purple-700 dark:text-purple-100",
       },
     },
     defaultVariants: {
