@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 import "@/components/ui/warcraftcn/styles/warcraft.css";
 
 const checkboxVariants = cva(
-  "flex items-center gap-3 cursor-pointer select-none fantasy mb-2 font-bold",
+  "inline-flex items-center gap-3 cursor-pointer select-none fantasy mb-2 font-bold",
   {
     variants: {
       faction: {
